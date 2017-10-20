@@ -1,0 +1,307 @@
+/* Custom Stylesheet */
+/*
+  NOTE: apparently WordPress, regardless of location, doesn't like more than one style.css file in a theme, 
+  hence m-style.css
+*/
+/**
+ * Use to override Materialize files so core Materialize files are updateable in the future
+ * Original by MaterializeCSS.com
+ */
+/* 
+Rough Site Architecture
+About Us
+	Bio
+	Listen (gallery content?)
+	Photos/Videos (gallery content?)
+Gigs (Shows seems better term)
+For Sale (to be developed after Wordpressization)
+Contact Us
+	Contact Info
+	Package Download
+Gallery????
+	Photos/Videos/Listen
+
+Miscellaneous
+http://www.richmond-news.com/entertainment/honky-tonk-dilettantes-to-play-steveston-folk-guild-1.1935780
+https://vimeo.com/122952707
+
+TO-DOs
+some kind of badge look for HTD site logo (western belt buckle look?)
+grunt concat for JS files
+find that example site with more pronounced parallax effect (find how they did it)
+
+*/
+/* 
+ Colour Palette Options:
+	fiddle body:    #A33711 -> #a33611, #104668, #4f920f, #6a1f06 (alt. brown #7a3d28, lighter blue 4287b4, )
+	paula's hat:    #4F1A0E, #0b2632, #2d480d, #330e05
+	michael's hat:  #EED9C0, #eee1co, #898ba4, #7b8d97
+*/
+/* line 58, ../sass/style.scss */
+html {
+  font-family: Tahoma, Verdana, Segoe, sans-serif; }
+
+/* line 61, ../sass/style.scss */
+h1 {
+  font-size: 2.8rem;
+  text-shadow: 3px 3px #333;
+  font-family: Rye, cursive; }
+
+/* line 68, ../sass/style.scss */
+h2 {
+  font-size: 2.25rem;
+  font-family: Rye, cursive; }
+
+/* line 72, ../sass/style.scss */
+h3 {
+  font-size: 1.5rem;
+  font-family: Rye, cursive; }
+
+/* line 76, ../sass/style.scss */
+h4 {
+  font-size: 1.25rem;
+  font-family: Rye, cursive; }
+
+/* line 80, ../sass/style.scss */
+h5 {
+  font-size: 1.25rem; }
+
+/* line 83, ../sass/style.scss */
+p {
+  line-height: 2rem; }
+
+/* line 89, ../sass/style.scss */
+.teal {
+  background-color: #4287b4 !important; }
+
+/* line 92, ../sass/style.scss */
+.teal-text {
+  color: #4287b4 !important; }
+
+/* line 95, ../sass/style.scss */
+.brown-text {
+  color: #7a3d28 !important; }
+
+/* Original target: footer links */
+/* line 101, ../sass/style.scss */
+a.white-text:hover {
+  color: #104668 !important; }
+
+/* NAV */
+/* line 109, ../sass/style.scss */
+nav ul a {
+  color: #444; }
+/* line 113, ../sass/style.scss */
+nav ul li:hover {
+  background-color: rgba(66, 135, 180, 0.1); }
+/* line 116, ../sass/style.scss */
+nav ul li.active {
+  background-color: rgba(66, 135, 180, 0.1); }
+/* line 121, ../sass/style.scss */
+nav .brand-logo {
+  color: #444; }
+  /* line 124, ../sass/style.scss */
+  nav .brand-logo > span:nth-child(1) {
+    margin-right: -0.75rem;
+    vertical-align: top; }
+  /* line 128, ../sass/style.scss */
+  nav .brand-logo > span:nth-child(2) {
+    font-size: 3rem; }
+  /* line 131, ../sass/style.scss */
+  nav .brand-logo > span:nth-child(3) {
+    margin-left: -0.75rem; }
+
+/* line 137, ../sass/style.scss */
+.button-collapse {
+  color: #4287b4 !important; }
+
+/* Make "wave" run top to bottom
+.nav-wrapper .waves-effect {
+	box-shadow: inset 0 0 0 0 #4287b4;
+}
+.nav-wrapper .waves-effect:hover {
+	color: #fff;
+	box-shadow: inset 0 62px 0 0 #4287b4;
+} */
+/* PARALLAX MODS */
+/* line 155, ../sass/style.scss */
+.parallax-container {
+  min-height: 300px;
+  line-height: 0;
+  height: 100%;
+  color: rgba(255, 255, 255, 0.9); }
+  /* line 160, ../sass/style.scss */
+  .parallax-container .section {
+    width: 100%; }
+
+/***** MEDIA QUERIES (Desktop 1st????) *****/
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 414px) and (orientation: portrait)  {
+  .parallax-container {
+    min-height: 213px;
+  }
+  h1.first-heading {
+    font-size: 1.8rem;
+    margin-top: 0;
+  }
+  .parallax-container h5 {
+    font-size: 1.1rem;
+    margin-top: 3.5rem;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  /* line 167, ../sass/style.scss */
+  .parallax-container .section {
+    position: absolute;
+    top: 40%; }
+
+  /* line 171, ../sass/style.scss */
+  #index-banner .section {
+    top: 10%; } 
+}
+@media only screen and (max-width: 600px) {
+  /* line 176, ../sass/style.scss */
+  #index-banner .section {
+    top: 0; } }
+/***** MEDIA QUERIES (Mobile 1st) *****/
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  /* line 184, ../sass/style.scss */
+  h5 {
+    font-size: 1.64rem; }
+
+  /* line 187, ../sass/style.scss */
+  .parallax-container.parallax-tall {
+    min-height: 550px; } }
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  /* line 193, ../sass/style.scss */
+  h1 {
+    font-size: 4.2rem; }
+
+  /* line 196, ../sass/style.scss */
+  h2 {
+    font-size: 3.56rem; }
+
+  /* line 199, ../sass/style.scss */
+  h3 {
+    font-size: 2.92rem; }
+
+  /* line 202, ../sass/style.scss */
+  h4 {
+    font-size: 2.28rem; } }
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  /* line 208, ../sass/style.scss */
+  .parallax-container {
+    min-height: 500px; } }
+/* line 213, ../sass/style.scss */
+.icon-block {
+  padding: 0 15px; }
+  /* line 215, ../sass/style.scss */
+  .icon-block .material-icons {
+    font-size: inherit; }
+
+/* line 221, ../sass/style.scss */
+footer.page-footer {
+  margin: 0; }
+
+
+
+/* HTD form input customizations */
+/* label focus color */
+.input-field input[type=text]:focus + label,
+.input-field input[type=email]:focus + label,
+.input-field textarea.materialize-textarea:focus + label {
+  color: #4287b4;
+}
+/* label underline focus color */
+.input-field input[type=text]:focus,
+.input-field input[type=email]:focus,
+.input-field textarea:focus {
+  border-bottom: 1px solid #4287b4;
+  box-shadow: 0 1px 0 0 #515590;
+}
+/* valid color */
+.input-field input[type=text].valid,
+.input-field input[type=email].valid {
+  border-bottom: 1px solid #3fc082;
+  box-shadow: 0 1px 0 0 #515590;
+}
+/* invalid color
+.input-field input[type=text].invalid {
+ border-bottom: 1px solid #000;
+ box-shadow: 0 1px 0 0 #000;
+} */
+/* icon prefix focus color */
+.input-field .prefix.active {
+  color: #4287b4;
+}
+
+/* line 81, ../sass/components/_form.scss */
+  input[type=text]:focus:not([readonly]) + label,
+  input[type=password]:focus:not([readonly]) + label,
+  input[type=email]:focus:not([readonly]) + label,
+  input[type=url]:focus:not([readonly]) + label,
+  input[type=time]:focus:not([readonly]) + label,
+  input[type=date]:focus:not([readonly]) + label,
+  input[type=datetime-local]:focus:not([readonly]) + label,
+  input[type=tel]:focus:not([readonly]) + label,
+  input[type=number]:focus:not([readonly]) + label,
+  input[type=search]:focus:not([readonly]) + label,
+  textarea.materialize-textarea:focus:not([readonly]) + label {
+    /*color: #fe0000;*/ }
+/* line 148, ../sass/components/_form.scss */
+.input-field .prefix.active {
+      /*color: #fe0000;*/ }
+
+
+.see-thru { opacity: 0; }
+.cloaked { visibility: hidden; }
+
+.animated {
+  animation-duration: 1.5s;
+  animation-fill-mode: both;
+}
+.animeDelay2s {
+  animation-delay: 2s;
+}
+.animeDelay5s {
+  animation-delay: 5s;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.fadeInDown {
+  animation-name: fadeInDown;
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.fadeInLeft {
+  animation-name: fadeInLeft;
+}
+
+
+/*# sourceMappingURL=style.css.map */

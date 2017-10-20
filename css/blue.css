@@ -1,0 +1,157 @@
+/* HTD Blue (AKA Blue Moon) */
+/* 
+ Colour Palette Options:
+	fiddle body:    #A33711 -> #a33611, #104668, #4f920f, #6a1f06 (alt. brown #7a3d28, lighter blue 4287b4, )
+	paula's hat:    #4F1A0E, #0b2632, #2d480d, #330e05
+	michael's hat:  #EED9C0, #eee1co, #898ba4, #7b8d97
+ 
+ Font Pairing recommendations:
+ 	Headings: 	Rye
+ 	Body:		Roboto, Open Sans, Maiden Orange, Merriweather, Abel, Oswald, Lora, PT Serif
+*/
+
+/* Header */
+
+/* 
+header#masthead {
+	background: #4287b4;
+	color: #fff;
+}
+*/
+
+/*
+header#masthead a {
+	 color: #fff;
+}
+*/
+
+ 
+/* Navigation */
+.nav {
+	color: #fff;
+	background-color: #64b5f6;
+	width: 100%;
+	height: 56px;
+	line-height: 56px;
+	overflow: hidden;
+}
+ 
+nav ul li:hover, nav ul li.active {
+	/* Let materialize handle this or maybe move "blue" stuff into this file
+	background-color: #1976d2; */
+}
+
+
+/* TO-DO: move to style.css or materialize.css */
+.main-navigation a,
+.site-title > a {
+	color: #fff;
+}
+
+/* TO-DO: move to style.css or materialize.css */
+.main-navigation .side-nav li {
+	color: #444;
+	float: none;
+	position: static;
+}
+
+/* Pulled from materialize.css */
+.side-nav a {
+    color: #444;
+    display: block;
+    font-size: 1rem;
+    height: 64px;
+    line-height: 64px;
+    padding-bottom: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 0;
+}
+
+
+
+
+/* Content */
+.card .card-title, 
+.card .card-title a {
+	color: #4287b4;
+} 
+
+.card a:hover {
+	color: #64b5f6; 
+}
+
+.card-action {
+	background: #e3f2fd;
+}
+
+.card a {
+	color: #4287b4;
+	margin-right: 0;
+	-webkit-transition: color 0.3s ease;
+	-moz-transition: color 0.3s ease;
+	-o-transition: color 0.3s ease;
+	-ms-transition: color 0.3s ease;
+	transition: color 0.3s ease;
+	text-transform: uppercase;
+}
+
+
+#secondary h2.widget-title {
+	/* background: #4287b4; */
+	/* background-color: rgba(33,150,243, 1); */
+	/* background-color: #4287b4; */
+	color: #fff;
+
+	position: relative;
+	z-index: 0;
+}
+
+
+.nav-links .btn {
+	background: #4287b4;
+}
+
+
+
+/* Comments */
+h2.comments-title, 
+h3#reply-title {
+	color: #fff;
+	background: #4287b4;
+	padding: 0 20px;
+}
+
+.btn, .btn-large {
+	text-decoration: none;
+	color: #fff;
+	background-color: #4287b4;
+	text-align: center;
+	letter-spacing: 0.5px;
+	-webkit-transition: 0.2s ease-out;
+	-moz-transition: 0.2s ease-out;
+	-o-transition: 0.2s ease-out;
+	-ms-transition: 0.2s ease-out;
+	transition: 0.2s ease-out;
+	cursor: pointer;
+}
+
+.depth-2 {
+	border-left: 5px solid #64b5f6;
+}
+
+
+.site-info {
+	padding: 20px;
+	background: #4287b4;
+	color: #fff;
+}
+ 
+.site-info a {
+	color: #fff;
+}
+
+/* Footer */
+.teal {
+	background-color: #4287b4 !important;	
+}
